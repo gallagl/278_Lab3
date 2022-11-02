@@ -1,0 +1,6 @@
+C:/Users/Liam/Desktop/278_Projects/278_Lab3/cmake-build-debug/CMakeFiles/BST_STRINGS.c.dir
+C:/Users/Liam/Desktop/278_Projects/278_Lab3/cmake-build-debug/CMakeFiles/BST_TRAVERSAL.c.dir
+C:/Users/Liam/Desktop/278_Projects/278_Lab3/cmake-build-debug/CMakeFiles/LAB3_BST.c.dir
+C:/Users/Liam/Desktop/278_Projects/278_Lab3/cmake-build-debug/CMakeFiles/MAKEIDNT.c.dir
+C:/Users/Liam/Desktop/278_Projects/278_Lab3/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Liam/Desktop/278_Projects/278_Lab3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
