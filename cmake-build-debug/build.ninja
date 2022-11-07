@@ -107,37 +107,43 @@ build BST_TRAVERSAL.c.exe: C_EXECUTABLE_LINKER__BST_TRAVERSAL.2ec_Debug CMakeFil
   TARGET_PDB = BST_TRAVERSAL.c.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target LAB3_BST.c
+# Object build statements for EXECUTABLE target LAB3_MAIN.c
 
 
 #############################################
-# Order-only phony target for LAB3_BST.c
+# Order-only phony target for LAB3_MAIN.c
 
-build cmake_object_order_depends_target_LAB3_BST.c: phony || CMakeFiles/LAB3_BST.c.dir
+build cmake_object_order_depends_target_LAB3_MAIN.c: phony || CMakeFiles/LAB3_MAIN.c.dir
 
-build CMakeFiles/LAB3_BST.c.dir/LAB3_BST.c.obj: C_COMPILER__LAB3_BST.2ec_Debug C$:/Users/Liam/Desktop/278_Projects/278_Lab3/LAB3_BST.c || cmake_object_order_depends_target_LAB3_BST.c
-  DEP_FILE = CMakeFiles\LAB3_BST.c.dir\LAB3_BST.c.obj.d
+build CMakeFiles/LAB3_MAIN.c.dir/LAB3_BST.c.obj: C_COMPILER__LAB3_MAIN.2ec_Debug C$:/Users/Liam/Desktop/278_Projects/278_Lab3/LAB3_BST.c || cmake_object_order_depends_target_LAB3_MAIN.c
+  DEP_FILE = CMakeFiles\LAB3_MAIN.c.dir\LAB3_BST.c.obj.d
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles\LAB3_BST.c.dir
-  OBJECT_FILE_DIR = CMakeFiles\LAB3_BST.c.dir
+  OBJECT_DIR = CMakeFiles\LAB3_MAIN.c.dir
+  OBJECT_FILE_DIR = CMakeFiles\LAB3_MAIN.c.dir
+
+build CMakeFiles/LAB3_MAIN.c.dir/LAB3_MAIN.c.obj: C_COMPILER__LAB3_MAIN.2ec_Debug C$:/Users/Liam/Desktop/278_Projects/278_Lab3/LAB3_MAIN.c || cmake_object_order_depends_target_LAB3_MAIN.c
+  DEP_FILE = CMakeFiles\LAB3_MAIN.c.dir\LAB3_MAIN.c.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\LAB3_MAIN.c.dir
+  OBJECT_FILE_DIR = CMakeFiles\LAB3_MAIN.c.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target LAB3_BST.c
+# Link build statements for EXECUTABLE target LAB3_MAIN.c
 
 
 #############################################
-# Link the executable LAB3_BST.c.exe
+# Link the executable LAB3_MAIN.c.exe
 
-build LAB3_BST.c.exe: C_EXECUTABLE_LINKER__LAB3_BST.2ec_Debug CMakeFiles/LAB3_BST.c.dir/LAB3_BST.c.obj
+build LAB3_MAIN.c.exe: C_EXECUTABLE_LINKER__LAB3_MAIN.2ec_Debug CMakeFiles/LAB3_MAIN.c.dir/LAB3_BST.c.obj CMakeFiles/LAB3_MAIN.c.dir/LAB3_MAIN.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\LAB3_BST.c.dir
+  OBJECT_DIR = CMakeFiles\LAB3_MAIN.c.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = LAB3_BST.c.exe
-  TARGET_IMPLIB = libLAB3_BST.c.dll.a
-  TARGET_PDB = LAB3_BST.c.exe.dbg
+  TARGET_FILE = LAB3_MAIN.c.exe
+  TARGET_IMPLIB = libLAB3_MAIN.c.dll.a
+  TARGET_PDB = LAB3_MAIN.c.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target MAKEIDNT.c
@@ -202,7 +208,7 @@ build BST_STRINGS.c: phony BST_STRINGS.c.exe
 
 build BST_TRAVERSAL.c: phony BST_TRAVERSAL.c.exe
 
-build LAB3_BST.c: phony LAB3_BST.c.exe
+build LAB3_MAIN.c: phony LAB3_MAIN.c.exe
 
 build MAKEIDNT.c: phony MAKEIDNT.c.exe
 
@@ -214,7 +220,7 @@ build MAKEIDNT.c: phony MAKEIDNT.c.exe
 #############################################
 # Folder: C:/Users/Liam/Desktop/278_Projects/278_Lab3/cmake-build-debug
 
-build all: phony BST_STRINGS.c.exe BST_TRAVERSAL.c.exe LAB3_BST.c.exe MAKEIDNT.c.exe
+build all: phony BST_STRINGS.c.exe BST_TRAVERSAL.c.exe LAB3_MAIN.c.exe MAKEIDNT.c.exe
 
 # =============================================================================
 # Built-in targets

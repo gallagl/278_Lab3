@@ -24,9 +24,9 @@ LAB3OBJ	=	LAB3_MAIN.obj LAB3_BST.obj
 LAB3_BST.exe:	$(LAB3OBJ)
 		cl /nologo /Fe$* /Fm$* $(LAB3OBJ)
 
-LAB3_MAIN.obj:		$*.c LAB3_BST.h
+LAB3_MAIN.obj:		$*.c cmake-build-debug/LAB3_BST.h
 
-LAB3_BST.obj:	$*.c LAB3_BST.h
+LAB3_BST.obj:	$*.c cmake-build-debug/LAB3_BST.h
 
 #-----------------------------------------------------------------------------
 # Dependencies for general example programs, etc.

@@ -13,8 +13,7 @@ course and the semester listed above.
 See LICENCE.MD for restrictions on the use of this code.
 ---------------------------------------------------------------------------- */
 
-
-#include "Lab3_bst.h"
+#include "LAB3_BST.h"
 
 // Code for ELEC278 Lab exercise 3.
 //
@@ -28,8 +27,8 @@ See LICENCE.MD for restrictions on the use of this code.
 // see #if statements that check values.  When you set a manifest here to 1,
 // the corresponding code in main will be executed.
 #define	HEIGHT_WRITTEN	1
-#define	FINDPARENTHELPER_WRITTEN	1
-#define	DELETE_WRITTEN	1
+#define	FINDPARENTHELPER_WRITTEN	0
+#define	DELETE_WRITTEN	0
 //
 // *** YOU SHOULD NOT MAKE ANY OTHER CHANGES TO THIS CODE ***
 

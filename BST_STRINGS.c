@@ -17,8 +17,6 @@ course and the semester listed above.
 See LICENCE.MD for restrictions on the use of this code.
 ---------------------------------------------------------------------------- */
 
-
-
 //
 //
 

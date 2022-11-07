@@ -3,7 +3,6 @@
 // Code for ELEC278 Lab 3.  Some code has already been implemented.
 // You will develop your own code - look for the comments.
 
-
 /* --README--------------------------------------------------------------------
 Source code used for teaching purposes in course:
 ELEC278, Queen's University, Kingston, Fall semester 2022.
@@ -17,12 +16,9 @@ course and the semester listed above.
 See LICENCE.MD for restrictions on the use of this code.
 ---------------------------------------------------------------------------- */
 
-
-
-
 #include <stdlib.h>
 #include <stdio.h>
-#include "Lab3_bst.h"
+#include "LAB3_BST.h"
 
 
 Node *initNode (Key k, void *v)
@@ -91,7 +87,7 @@ void printTree (Node* root)
 	if (root->leftChild != NULL)	printTree(root->leftChild);
 	else							printf("{}");
 	// Marker between left and right subtrees		
-	printf(",");
+	printf("|");
 	// Now show right subtree or {} if there is no right subtree
 	if (root->rightChild != NULL)	printTree(root->rightChild);
 	else							printf("{}");
@@ -125,8 +121,6 @@ Node *find (Key k, Node *root)
 		// search left subtree
 		return find(k,root->leftChild);	
 }//find()
-
-
 
 int insert(Key k, void *v, Node *root)
 // Function inserts a new node into the tree, with key k and value pointed to
@@ -172,7 +166,6 @@ int insert(Key k, void *v, Node *root)
 	return result;	
 }//insert()
 
-
 int intmax(int a, int b)
 // YOU WILL USE THIS FUNCTION WHEN YOU IMPLEMENT HEIGHT() !!
 // Useful function - returns the greater value of two integers.
@@ -189,36 +182,37 @@ int height(Node *root)
 // Height definition:
 // Height of an empty tree is -1.  Height of a leaf node is 0. Height of other
 // nodes is 1 more than larger height of node's two subtrees.
-{ 
-	int		nodeheight = -1;	// default returned for empty tree
+{
+    int leftHeight, rightHeight,nodeheight;
+	nodeheight = -1;	// default returned for empty tree
+
 	if (root != NULL)	{
-		// ---<SNIP>----
-		// your code goes here  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-		// ---<SNIP>----
-		}
+
+        // descend to left
+        leftHeight = height(root->leftChild);
+        // descend to right
+        rightHeight = height(root->rightChild);
+        nodeheight = 1 + ((leftHeight>rightHeight)? leftHeight:rightHeight);
+    }
 	return nodeheight;
 
 }//height()
 
 
-Node* findParentHelper (Key k, Node* root)
+Node* findParentHelper (Key k, Node* root){
 // Help find parent of node with key == k. Parameter root is node with
 // at least one child (see findParent()).
-{
-	// your code goes here  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-	// ---<SNIP>----
+    Node* p = find(k,root);
 
-	// ---<SNIP>----
+
 }//findparenthelper()
 
-
 Node *findParent(Key k, Node *root)
-// 
 {
-	// Deal with special special cases which could only happen for root
+	// Deal with special cases which could only happen for root
 	// of whole tree
 	if (root == NULL)	return root;	
-	// real root doesn't have parent so we make it parent of itself
+	// real root doesn't have parent, so we make it parent of itself
 	if (root->key == k)	return root;	
 	// root has no children
 	if ((root->leftChild == NULL) && (root->rightChild == NULL)) 

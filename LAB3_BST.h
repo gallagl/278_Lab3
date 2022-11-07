@@ -2,7 +2,6 @@
 // Header file to be used with code for ELEC278 Lab 3.
 //
 
-
 /* --README--------------------------------------------------------------------
 Source code used for teaching purposes in course:
 ELEC278, Queen's University, Kingston, Fall semester 2022.
@@ -72,7 +71,6 @@ Node* findParent(Key k, Node* root);
 // Return pointer of node created in 1; Returns NULL if no node
 // with specified key value is found
 int withdraw(Key k, Node* root, Node* n);
-
 
 //******************************************************************
 //************ FUNCTIONS TO BE IMPLEMENTED BY THE STUDENT **********

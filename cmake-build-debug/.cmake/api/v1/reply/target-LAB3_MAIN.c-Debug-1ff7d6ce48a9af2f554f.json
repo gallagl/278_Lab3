@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "LAB3_BST.c.exe"
+			"path" : "LAB3_MAIN.c.exe"
 		},
 		{
-			"path" : "LAB3_BST.c.pdb"
+			"path" : "LAB3_MAIN.c.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -44,11 +44,12 @@
 			"language" : "C",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
-	"id" : "LAB3_BST.c::@6890427a1f51a3e7e1df",
+	"id" : "LAB3_MAIN.c::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -68,8 +69,8 @@
 		],
 		"language" : "C"
 	},
-	"name" : "LAB3_BST.c",
-	"nameOnDisk" : "LAB3_BST.c.exe",
+	"name" : "LAB3_MAIN.c",
+	"nameOnDisk" : "LAB3_MAIN.c.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -81,7 +82,15 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				2
 			]
 		}
 	],
@@ -92,6 +101,17 @@
 			"compileGroupIndex" : 0,
 			"path" : "LAB3_BST.c",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "LAB3_MAIN.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "LAB3_BST.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"
