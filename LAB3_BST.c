@@ -202,8 +202,15 @@ int height(Node *root)
 Node* findParentHelper (Key k, Node* root){
 // Help find parent of node with key == k. Parameter root is node with
 // at least one child (see findParent()).
-    Node* p = find(k,root);
 
+    if (((root->leftChild != NULL) && (root->leftChild->key == k)) || ((root->rightChild != NULL) && (root->rightChild->key == k))){
+        return root;
+    }else if((k > root->key) && (root->rightChild != NULL)){
+        return findParentHelper(k, root->rightChild);
+    }else if((k < root->key) && (root->leftChild != NULL)) {
+        return findParentHelper(k, root->leftChild);
+    }
+    return NULL;
 
 }//findparenthelper()
 
@@ -217,7 +224,7 @@ Node *findParent(Key k, Node *root)
 	// root has no children
 	if ((root->leftChild == NULL) && (root->rightChild == NULL)) 
 			return NULL;
-	
+
 	// Deal with cases where root has at least one child
 	return findParentHelper(k, root);
 }//findParent()

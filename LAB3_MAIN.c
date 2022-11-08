@@ -27,7 +27,7 @@ See LICENCE.MD for restrictions on the use of this code.
 // see #if statements that check values.  When you set a manifest here to 1,
 // the corresponding code in main will be executed.
 #define	HEIGHT_WRITTEN	1
-#define	FINDPARENTHELPER_WRITTEN	0
+#define	FINDPARENTHELPER_WRITTEN	1
 #define	DELETE_WRITTEN	0
 //
 // *** YOU SHOULD NOT MAKE ANY OTHER CHANGES TO THIS CODE ***
@@ -58,11 +58,10 @@ int main(void)
 		}
 
 	if (FINDPARENTHELPER_WRITTEN == 1)	{
-		printf("Parent of root (key=10): %d\n", findParent(10,t->root)->key);
-		printf("Parent of leaf (key=16): %d\n", findParent(16,t->root)->key);
-		printf("Parent of other (key=15): %d\n\n", findParent(15,t->root)->key);
+		printf("Parent of root (key=10): %d\n", findParent(17,t->root)->key);
+		//printf("Parent of leaf (key=16): %d\n", findParent(16,t->root)->key);
+		//printf("Parent of other (key=15): %d\n\n", findParent(15,t->root)->key);
 		}
-
 
 	if (DELETE_WRITTEN == 1)	{
 		printf ("Tree after deleting 1:\n");
