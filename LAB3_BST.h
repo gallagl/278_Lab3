@@ -72,6 +72,10 @@ Node* findParent(Key k, Node* root);
 // with specified key value is found
 int withdraw(Key k, Node* root, Node* n);
 
+Node* findmin(Node *root);
+
+Node* findmax(Node *root);
+
 //******************************************************************
 //************ FUNCTIONS TO BE IMPLEMENTED BY THE STUDENT **********
 //******************************************************************

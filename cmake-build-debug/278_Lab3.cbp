@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="278_Lab3"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BST_STRINGS.c">
+				<Option output="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/BST_STRINGS.c.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 BST_STRINGS.c"/>
+					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BST_STRINGS.c/fast">
+				<Option output="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/BST_STRINGS.c.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 BST_STRINGS.c/fast"/>
+					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BST_TRAVERSAL.c">
+				<Option output="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/BST_TRAVERSAL.c.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 BST_TRAVERSAL.c"/>
+					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BST_TRAVERSAL.c/fast">
+				<Option output="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/BST_TRAVERSAL.c.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 BST_TRAVERSAL.c/fast"/>
+					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LAB3_MAIN.c">
+				<Option output="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/LAB3_MAIN.c.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 LAB3_MAIN.c"/>
+					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LAB3_MAIN.c/fast">
+				<Option output="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/LAB3_MAIN.c.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 LAB3_MAIN.c/fast"/>
+					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LAB03_BST2.c">
+				<Option output="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/LAB03_BST2.c.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 LAB03_BST2.c"/>
+					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LAB03_BST2.c/fast">
+				<Option output="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/LAB03_BST2.c.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 LAB03_BST2.c/fast"/>
+					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MAKEIDNT.c">
+				<Option output="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/MAKEIDNT.c.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 MAKEIDNT.c"/>
+					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MAKEIDNT.c/fast">
+				<Option output="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/MAKEIDNT.c.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 MAKEIDNT.c/fast"/>
+					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/BST_STRINGS.c">
+			<Option target="BST_STRINGS.c"/>
+		</Unit>
+		<Unit filename="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/BST_TRAVERSAL.c">
+			<Option target="BST_TRAVERSAL.c"/>
+		</Unit>
+		<Unit filename="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/LAB03_BST2.c">
+			<Option target="LAB03_BST2.c"/>
+		</Unit>
+		<Unit filename="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/LAB3_BST.c">
+			<Option target="LAB3_MAIN.c"/>
+		</Unit>
+		<Unit filename="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/LAB3_BST.h">
+			<Option target="LAB3_MAIN.c"/>
+		</Unit>
+		<Unit filename="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/LAB3_MAIN.c">
+			<Option target="LAB3_MAIN.c"/>
+		</Unit>
+		<Unit filename="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/MAKEIDNT.c">
+			<Option target="MAKEIDNT.c"/>
+		</Unit>
+		<Unit filename="C:/Users/galla/OneDrive - Queen&apos;s University/1. Current Classes/ELEC 278/278_Lab3_Main/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

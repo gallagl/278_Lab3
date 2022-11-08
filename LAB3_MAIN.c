@@ -53,16 +53,23 @@ int main(void)
 	printTree(t->root);
 	printf("\n\n");
 
+
+    withdraw(3,t->root,n);
+
+
+
+    printf("Tree After Deletion: \n");
+    printTree(t->root);
+    printf("\n\n");
+
 	if (HEIGHT_WRITTEN == 1)	{
 		printf("Height of tree: %d\n\n", height(t->root));
 		}
-
 	if (FINDPARENTHELPER_WRITTEN == 1)	{
 		printf("Parent of root (key=10): %d\n", findParent(17,t->root)->key);
 		//printf("Parent of leaf (key=16): %d\n", findParent(16,t->root)->key);
 		//printf("Parent of other (key=15): %d\n\n", findParent(15,t->root)->key);
 		}
-
 	if (DELETE_WRITTEN == 1)	{
 		printf ("Tree after deleting 1:\n");
 		withdraw (1,t->root,n);
@@ -81,6 +88,5 @@ int main(void)
 		printf("\n");
 		//free(n);
 		}
-	
 	return 0;
 }//main()

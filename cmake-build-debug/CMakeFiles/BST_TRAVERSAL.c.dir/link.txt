@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\BST_TRAVERSAL.c.dir/objects.a
+"C:\PROGRA~1\JetBrains\CLion 2022.2.1\bin\mingw\bin\ar.exe" qc CMakeFiles\BST_TRAVERSAL.c.dir/objects.a @CMakeFiles\BST_TRAVERSAL.c.dir\objects1.rsp
+"C:\PROGRA~1\JetBrains\CLion 2022.2.1\bin\mingw\bin\gcc.exe" -g -Wl,--whole-archive CMakeFiles\BST_TRAVERSAL.c.dir/objects.a -Wl,--no-whole-archive -o BST_TRAVERSAL.c.exe -Wl,--out-implib,libBST_TRAVERSAL.c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\BST_TRAVERSAL.c.dir\linklibs.rsp

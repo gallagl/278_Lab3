@@ -1,4 +1,4 @@
-// LAB3_BST.C 
+//LAB3_BST.c – Lab 03 – Liam, Gallagher
 // 
 // Code for ELEC278 Lab 3.  Some code has already been implemented.
 // You will develop your own code - look for the comments.
@@ -19,7 +19,6 @@ See LICENCE.MD for restrictions on the use of this code.
 #include <stdlib.h>
 #include <stdio.h>
 #include "LAB3_BST.h"
-
 
 Node *initNode (Key k, void *v)
 // Allocate memory for new node and initialize fields.
@@ -198,7 +197,6 @@ int height(Node *root)
 
 }//height()
 
-
 Node* findParentHelper (Key k, Node* root){
 // Help find parent of node with key == k. Parameter root is node with
 // at least one child (see findParent()).
@@ -230,32 +228,58 @@ Node *findParent(Key k, Node *root)
 }//findParent()
 
 
-void delete (Node *p, Node *n)
+void delete (Node *p, Node *n){
 // Delete node pointed to by n.
 // Parameters:
 //	n	- points to node to be deleted
 //	p	- points to parent of node to be deleted.
-{
-	// Deletion has 3 cases - no subtrees, only left or right subtree, or both
-	// left and right subtrees.
-	Node *deleteNode = n;		// Save copy of pointer to node to delete.
-
-	if (n->leftChild != NULL) {			// there is left child
+    // Deletion has 3 cases - no subtrees, only left or right subtree, or both
+    // left and right subtrees.
+    Node *deleteNode = n;        // Save copy of pointer to node to delete.
+    Node *minNode;
+// your code goes here  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    if((n->leftChild != NULL) && (n->rightChild == NULL)) { // only left child
+        if (p->key > n->key) {
+            p->leftChild = n->leftChild;
+            free(n);
+        }else{
+            p->rightChild = n->leftChild;
+            free(n);
+        }
+    }else if((n->rightChild != NULL) && (n->leftChild == NULL)){ // only right child
+        if (p->key > n->key) {
+            p->leftChild = n->rightChild;
+            free(n);
+        }else{
+            p->rightChild = n->rightChild;
+            free(n);
+        }
+    }else if ((n->rightChild != NULL) && (n->leftChild != NULL)) {	// there is both left and right children
+        minNode = findmin(n->rightChild);
+        n->key = minNode->key;
+        Node* minParent = findParent(minNode->key,n);
+        delete(minParent,minNode);
+    } else	{ // Leaf case
+        if (p->key > n->key){
+            p->leftChild = NULL;
+            free(n);
+        }else{
+            p->rightChild = NULL;
+            free(n);
+        }// no children
 
 	// your code goes here  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-	} else if (n->rightChild) {			// there is a right child
-
-	// your code goes here  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-	} else	{							// no children
-
-	// your code goes here  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-		}
+    }
 
 }//delete()
 
+Node *findmin(Node* root){
+    int min = root->key;
+    while (root->leftChild != NULL){
+        root=root->leftChild;
+    }
+    return root;
+}
 
 int withdraw(Key k, Node* root, Node* n)
 // Withdraw does two things:
