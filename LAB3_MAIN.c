@@ -14,9 +14,7 @@ See LICENCE.MD for restrictions on the use of this code.
 ---------------------------------------------------------------------------- */
 
 #include "LAB3_BST.h"
-
-// Code for ELEC278 Lab exercise 3.
-//
+// Code for ELEC278 Lab exercise 3./
 // The lab requires that you implement 3 functions:
 //	int height (Node *);
 //	Node* findParentHelper (Key, Node*);
@@ -29,7 +27,7 @@ See LICENCE.MD for restrictions on the use of this code.
 #define	HEIGHT_WRITTEN	1
 #define	FINDPARENTHELPER_WRITTEN	1
 #define	DELETE_WRITTEN	0
-//
+
 // *** YOU SHOULD NOT MAKE ANY OTHER CHANGES TO THIS CODE ***
 
 int main(void)
@@ -53,10 +51,7 @@ int main(void)
 	printTree(t->root);
 	printf("\n\n");
 
-
     withdraw(3,t->root,n);
-
-
 
     printf("Tree After Deletion: \n");
     printTree(t->root);

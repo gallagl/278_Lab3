@@ -16,10 +16,10 @@ CMakeFiles/LAB03_BST2.c.dir/LAB03_BST2.c.obj: \
  C:/PROGRA~1/JetBrains/CLion\ 2022.2.1/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
  C:/PROGRA~1/JetBrains/CLion\ 2022.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/mm_malloc.h \
  C:/PROGRA~1/JetBrains/CLion\ 2022.2.1/bin/mingw/x86_64-w64-mingw32/include/errno.h \
- C:/PROGRA~1/JetBrains/CLion\ 2022.2.1/bin/mingw/x86_64-w64-mingw32/include/string.h \
- C:/PROGRA~1/JetBrains/CLion\ 2022.2.1/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
  C:/PROGRA~1/JetBrains/CLion\ 2022.2.1/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
  C:/PROGRA~1/JetBrains/CLion\ 2022.2.1/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/PROGRA~1/JetBrains/CLion\ 2022.2.1/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h \
  C:/PROGRA~1/JetBrains/CLion\ 2022.2.1/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
- C:/PROGRA~1/JetBrains/CLion\ 2022.2.1/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h
+ C:/PROGRA~1/JetBrains/CLion\ 2022.2.1/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/PROGRA~1/JetBrains/CLion\ 2022.2.1/bin/mingw/x86_64-w64-mingw32/include/string.h \
+ C:/PROGRA~1/JetBrains/CLion\ 2022.2.1/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h
