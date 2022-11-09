@@ -26,7 +26,7 @@ See LICENCE.MD for restrictions on the use of this code.
 // the corresponding code in main will be executed.
 #define	HEIGHT_WRITTEN	1
 #define	FINDPARENTHELPER_WRITTEN	1
-#define	DELETE_WRITTEN	0
+#define	DELETE_WRITTEN	1
 
 // *** YOU SHOULD NOT MAKE ANY OTHER CHANGES TO THIS CODE ***
 
@@ -50,12 +50,6 @@ int main(void)
 	printf("Original Tree: \n");
 	printTree(t->root);
 	printf("\n\n");
-
-    withdraw(3,t->root,n);
-
-    printf("Tree After Deletion: \n");
-    printTree(t->root);
-    printf("\n\n");
 
 	if (HEIGHT_WRITTEN == 1)	{
 		printf("Height of tree: %d\n\n", height(t->root));

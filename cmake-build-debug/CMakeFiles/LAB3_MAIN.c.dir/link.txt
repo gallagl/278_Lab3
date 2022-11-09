@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\LAB3_MAIN.c.dir/objects.a
-"C:\PROGRA~1\JetBrains\CLion 2022.2.1\bin\mingw\bin\ar.exe" qc CMakeFiles\LAB3_MAIN.c.dir/objects.a @CMakeFiles\LAB3_MAIN.c.dir\objects1.rsp
-"C:\PROGRA~1\JetBrains\CLion 2022.2.1\bin\mingw\bin\gcc.exe" -g -Wl,--whole-archive CMakeFiles\LAB3_MAIN.c.dir/objects.a -Wl,--no-whole-archive -o LAB3_MAIN.c.exe -Wl,--out-implib,libLAB3_MAIN.c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\LAB3_MAIN.c.dir\linklibs.rsp

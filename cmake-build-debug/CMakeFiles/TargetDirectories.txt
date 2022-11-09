@@ -1,7 +1,7 @@
-C:/Users/galla/OneDrive - Queen's University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/CMakeFiles/BST_STRINGS.c.dir
-C:/Users/galla/OneDrive - Queen's University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/CMakeFiles/BST_TRAVERSAL.c.dir
-C:/Users/galla/OneDrive - Queen's University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/CMakeFiles/LAB3_MAIN.c.dir
-C:/Users/galla/OneDrive - Queen's University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/CMakeFiles/LAB03_BST2.c.dir
-C:/Users/galla/OneDrive - Queen's University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/CMakeFiles/MAKEIDNT.c.dir
-C:/Users/galla/OneDrive - Queen's University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/galla/OneDrive - Queen's University/1. Current Classes/ELEC 278/278_Lab3_Main/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Liam/Desktop/278_Projects/278_Lab3/cmake-build-debug/CMakeFiles/BST_STRINGS.c.dir
+C:/Users/Liam/Desktop/278_Projects/278_Lab3/cmake-build-debug/CMakeFiles/BST_TRAVERSAL.c.dir
+C:/Users/Liam/Desktop/278_Projects/278_Lab3/cmake-build-debug/CMakeFiles/LAB3_MAIN.c.dir
+C:/Users/Liam/Desktop/278_Projects/278_Lab3/cmake-build-debug/CMakeFiles/LAB03_BST2.c.dir
+C:/Users/Liam/Desktop/278_Projects/278_Lab3/cmake-build-debug/CMakeFiles/MAKEIDNT.c.dir
+C:/Users/Liam/Desktop/278_Projects/278_Lab3/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Liam/Desktop/278_Projects/278_Lab3/cmake-build-debug/CMakeFiles/rebuild_cache.dir

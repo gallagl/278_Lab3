@@ -82,6 +82,15 @@ Node *findMin(Node *root) {
     return (current);
 }
 
+Node *findMax(Node *root) {
+    Node *current = root;
+
+    while (current->rightChild != NULL) { //traverse left in the tree
+        current = current->rightChild;
+    }
+    return (current);
+}
+
 Node *find (int k, Node *root)
 {
     // termination conditions - either true, search is ended
@@ -134,62 +143,46 @@ Node *findParent(int k, Node *root)
     return findParentHelper(k, root);
 }//findParent()
 
-void delete (Node *p, Node *n)
-// Delete node pointed to by n.
-// Parameters:
-//	n	- points to node to be deleted
-//	p	- points to parent of node to be deleted.
-{
-    // Deletion has 3 cases - no subtrees, only left or right subtree, or both
-    // left and right subtrees.
-    Node *deleteNode = n;		// Save copy of pointer to node to delete;
-    Node *temp;
+void delete (Node *p, Node *n){
+    Node *deleteNode = n;
+    Node *minNode;
 
-    if ((n->leftChild != NULL) && (n->rightChild == NULL)) {			// there is left child
+    if((n->leftChild != NULL) && (n->rightChild == NULL)) { // Node has only a left child
         if (p->id > n->id) {
             p->leftChild = n->leftChild;
-            free(deleteNode);
-        }
-        else if (p->id < n->id){
+            free(n);
+        }else{
             p->rightChild = n->leftChild;
-            free(deleteNode);
+            free(n);
         }
-
-    } else if ((n->rightChild != NULL) && (n->leftChild == NULL)) {			// there is a right child
-        if (p->id > n->id){
+    }else if((n->rightChild != NULL) && (n->leftChild == NULL)){ // Node has only a right child
+        if (p->id > n->id) {
             p->leftChild = n->rightChild;
-            free(deleteNode);
-        }
-        else if (p->id < n->id){
+            free(n);
+        }else{
             p->rightChild = n->rightChild;
-            free(deleteNode);
+            free(n);
         }
-
-    } else if ((n->rightChild == NULL) && (n->leftChild == NULL)){							// no children
-        if (n->id >= p->id) {
-            p->rightChild = NULL;
-            free (deleteNode);
-        }
-        else if (n->id <= p->id){
+    }else if ((n->rightChild != NULL) && (n->leftChild != NULL)) {	// Node has both left and right children
+        minNode = findMin(n->rightChild);
+        n->id = minNode->id;
+        Node* minParent = findParent(minNode->id,n);
+        delete(minParent,minNode);
+    } else	{ // Case where the node is a leaf
+        if (p->id > n->id){
             p->leftChild = NULL;
-            free (deleteNode);
+            free(n);
+        }else{
+            p->rightChild = NULL;
+            free(n);
         }
-
-
-    } else if ((n->rightChild != NULL) && (n->leftChild != NULL)){ //two children
-        temp = findMin(n->rightChild);
-        n->id = temp->id;
-        n->pass = temp->pass;
-        Node *rent = findParent(temp->id, n);
-
-        delete(rent, temp);
     }
-}//delete()
+}
 
 int withdraw(int k, Node* root, Node* n)
 // Withdraw does two things:
 //	return a copy of the node with key k (and value v)
-//	Delete the node with key k from the tree while ensuring the tree remains valid
+//	Delete the node with key k from the tree while ensuring the tree remains BST_SUCCESS
 {
     Node *p, *m;
     m = find(k, root);
@@ -202,10 +195,8 @@ int withdraw(int k, Node* root, Node* n)
         delete(p,m);
         return 1;
     }
-
     return 0;
 }//withdraw()
-
 
 typedef struct Tree{
     Node *root;
@@ -217,18 +208,21 @@ Tree *initTree(int k, void *value){
         t->root = initNode(k, value);
     return t;
 }
-
-int treeChecker(Node* root){ //function to check the tree
-    if (root == NULL)
+int bstCheck(Node* root){ // My function to determine if the BST is BST_SUCCESS.
+    if (root == NULL) { // Empty tree case
         return BST_SUCCESS;
-    if (root->leftChild != NULL && root->leftChild->id > root->id)
+    }
+    if ((root->leftChild != NULL) && (findMax(root->leftChild)->id > root->id)){ // If to the left of the current node there is a value larger, BST_FAIL tree.
         return BST_FAIL;
-    if (root->rightChild != NULL && root->rightChild->id < root->id)
+    }
+    if ((root->rightChild != NULL) && (findMin(root->rightChild)->id < root->id)){ // If to the right of the current node there is a value smaller, BST_FAIL tree.
         return BST_FAIL;
-    return treeChecker(root->leftChild);
-    return treeChecker(root->rightChild);
+    }
+    if ((bstCheck(root->leftChild) == BST_FAIL)|| (bstCheck(root->rightChild) == BST_FAIL)){ // Checks again (recursively) for the left and right children of the current node.
+        return BST_FAIL;
+    }
+    return BST_SUCCESS; // If none of the other cases were reached, the whole tree was traversed and no errors were found, therefore it is a BST_SUCCESS tree.
 }
-
 
 int main(){
     Tree *myTree = {NULL};
@@ -240,8 +234,8 @@ int main(){
         return 0;
     }
     int employeeid;
-    char passwordbuffer[20];
-    int count =0;
+    char password[30]; // Char array to store passwords as they are read in.
+    int count = 0; // Count number of nodes added (id-password sets).
 
     while (fscanf(ptr, "%d", &employeeid) == 1) { // while lines are being read
         char ch;
@@ -251,29 +245,30 @@ int main(){
             ch = fgetc(ptr);
         } while (ch == ' ');
         do {
-            passwordbuffer[i] = ch;
+            password[i] = ch;
             i++;
             ch = fgetc(ptr); // get next character
-        } while (ch != '\r' && ch != '\n');
-        passwordbuffer[i] = '\0';
+        } while (ch != '\r' && ch != '\n'); // For length of the string
+        password[i] = '\0';
 
         if (count == 0) { // if it's the first time, initialize the tree
-            myTree = initTree(employeeid, passwordbuffer);
+            myTree = initTree(employeeid, password);
             count++;
         }
         else{ // otherwise insert the nodes to the tree
-            insert(employeeid, passwordbuffer, myTree->root);
+            insert(employeeid, password, myTree->root);
             count++;
         }
     }
     fclose(ptr); //close file
 
-    printf("BST NODES: %d \n", count); // print the number of nodes
-    if (treeChecker(myTree->root) == 1) //check if the BST is valid. Print valid BST if it is, otherwise exit the program
-        printf("Valid BST \n\n");
-    else
+    printf("Number of nodes before deletion: %d \n", count); // print the number of nodes
+    if (bstCheck(myTree->root) == 1) //check if the BST is BST_SUCCESS. Print BST_SUCCESS BST if it is, otherwise exit the program
+        printf("BST_SUCCESS\n");
+    else {
+        printf("BST_FAIL\n");
         return 0;
-
+    }
     // Open the file with the deleting information
     FILE* ptrd = fopen("DELETES.txt", "r");
 
@@ -283,26 +278,24 @@ int main(){
         c = withdraw(employeeid, myTree->root, n); //withdraw the value
         if (c == 1) //if the value is found and removed, remove 1 from the value of count
             count--;
-        else
-            printf("ID %d <NOT FOUND>", employeeid); // if the value is not in the list output error message
+        else printf("<NOT FOUND>");
     }
     fclose(ptrd); //close file
 
-    printf("NODES AFTER DELETES: %d \n", count); // print the number of nodes after the deletions
-    if (treeChecker(myTree->root) == 1) //check if the tree is still valid, if so print that it is, otherwise exit the code
-        printf("Valid BST \n\n");
-    else
+    printf("Number of nodes after deletion: %d \n", count); // print the number of nodes after the deletions
+    if (bstCheck(myTree->root) == 1) //check if the tree is still BST_SUCCESS, if so print that it is, otherwise exit the code
+        printf("BST_SUCCESS\n");
+    else {
+        printf("BST_FAIL\n");
         return 0;
+    }
 
-    FILE* ptrl = fopen("LOOKUPS.txt", "r"); //open LOOKUPS file
+    FILE* ptrl = fopen("LOOKUPS.txt", "r"); // Opens the LOOKUPS file
 
     Node *f;
     while (fscanf(ptrl, "%d", &employeeid) == 1){ //while there are ids to be found
         f = find(employeeid, myTree->root); //find the node
-        if (f == NULL) // if node not found, tell the user
-            printf("ID %d PASSWORD <NOT FOUND>", employeeid);
-        else
-            printf("ID %d PASSWORD %s \n", employeeid, f->pass); //if the id is found, print the id number and the password
+        printf("ID %d PASSWORD %s \n", employeeid, f->pass); // Prints the id number and the password
     }
     fclose(ptrl); //close file
 

@@ -20,6 +20,10 @@ See LICENCE.MD for restrictions on the use of this code.
 #include <stdio.h>
 #include "LAB3_BST.h"
 
+Node* findmin(Node *root);
+
+Node* findmax(Node *root);
+
 Node *initNode (Key k, void *v)
 // Allocate memory for new node and initialize fields.
 // Returns pointer to node created.
@@ -229,6 +233,8 @@ Node *findParent(Key k, Node *root)
 
 
 void delete (Node *p, Node *n){
+
+
 // Delete node pointed to by n.
 // Parameters:
 //	n	- points to node to be deleted
@@ -267,8 +273,6 @@ void delete (Node *p, Node *n){
             p->rightChild = NULL;
             free(n);
         }// no children
-
-	// your code goes here  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     }
 
 }//delete()
@@ -300,3 +304,4 @@ int withdraw(Key k, Node* root, Node* n)
 	
 	return 0;	
 }//withdraw()
+

@@ -14,8 +14,6 @@ course and the semester listed above.
 
 See LICENCE.MD for restrictions on the use of this code.
 ---------------------------------------------------------------------------- */
-
-
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -37,7 +35,6 @@ typedef struct Node	{
 typedef struct Tree {
 	Node *root;
 } Tree;
-
 
 // Prototypes for functions found in BST.C
 
@@ -71,10 +68,6 @@ Node* findParent(Key k, Node* root);
 // Return pointer of node created in 1; Returns NULL if no node
 // with specified key value is found
 int withdraw(Key k, Node* root, Node* n);
-
-Node* findmin(Node *root);
-
-Node* findmax(Node *root);
 
 //******************************************************************
 //************ FUNCTIONS TO BE IMPLEMENTED BY THE STUDENT **********
